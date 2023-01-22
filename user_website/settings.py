@@ -112,5 +112,7 @@ LOGOUT_REDIRECT_URL = "dashboard"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
-
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = "localhost"
+EMAIL_PORT = 1025
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
